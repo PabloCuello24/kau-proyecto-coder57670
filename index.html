@@ -14,8 +14,7 @@
     <header class="header">
         <div class="header-index">
             <form class="buscar" action="">
-                <label for="buscar">buscar</label>
-                <input type="search" name="buscar" id="buscar">
+                <input type="search" name="buscar" id="buscar" placeholder="buscar">
             </form>
         </div>
         <div class="header-navbar">
@@ -40,12 +39,16 @@
     <main class="grid">
         <section class="relato-contenedor">
             <article class="relato">
-                <h2>120</h2>
-                <h3>Kau, 120 años de tradición familiar, dedicadas al más puro chocolate. Productos únicos hechos con
+                <div class="number">
+                    <h2>120</h2>
+                </div>
+                <div class="historia-ppal">
+                    <h3>Kau, 120 años de tradición familiar, dedicadas al más puro chocolate. Productos únicos hechos con
                     amor para tocar el corazón de quien los prueba.</h3>
-                <p>Producimos de manera artesanal cada producto que llega a tus manos. Usamos materia prima de la mejor
+                    <p>Producimos de manera artesanal cada producto que llega a tus manos. Usamos materia prima de la mejor
                     calidad y con recetas que han sido parte de nuestra historia durante años.</p>
                 <a href="./pages/historia.html">VER MÁS</a>
+            </div>
             </article>
         </section>
 
@@ -132,17 +135,14 @@
         <div class="social">
             <h3>Social</h3>
             <h4>NUESTRAS REDES</h4>
-            <div>
-                <img src="" alt="">
-                <h4>INSTAGRAM</h4>
-                <img src="" alt="">
-                <h4>FACEBOOK</h4>
-                <img src="" alt="">
-                <h4>LINKEDIN</h4>
+            <div class="redes">
+                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="">FACEBOOK</a></li>
+                <li><a href="">LINKEDIN</a></li>
             </div>
         </div>
-        <section>
-            <div class="footer">
+        <section class="footer">
+            <div class="footer-info">
                 <div>
                     <H5>Tiendas</H5>
                     <li><a href="">Paseo Sobrmonte 24 - Córdoba</a></li>
@@ -162,10 +162,10 @@
                     <li><a href="">Políticas de privacidad</a></li>
                 </div>
             </div>
-            <div class="back">
-                <a href="./index.html">KAU</a>
-            </div>
-        </section>
+        </section>            
+        <div class="back">
+            <a href="./index.html">KAU</a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

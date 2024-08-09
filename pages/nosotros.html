@@ -12,8 +12,7 @@
     <header class="header">
         <div class="header-index">
             <form class="buscar" action="">
-                <label for="buscar">buscar</label>
-                <input type="search" name="buscar" id="buscar">
+                <input type="search" name="buscar" id="buscar" placeholder="buscar">
             </form>
         </div>
         <div class="header-navbar">
@@ -33,9 +32,9 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="nosotros">
     
-        <div>
+        <div class="datos">
             <div>
                 <h2>+230</h2>
                 <p>empleados y artesanos</p>
@@ -49,58 +48,82 @@
                 <p>productos artesanales</p>
             </div>
         </div>
-        <img src="../assets/img/nosotros-fabrica.jpg" alt="">
+        <div class="imagen-historia">
+            <img src="../assets/img/nosotros-fabrica.jpg" alt="">
+        </div>
         <section>
-            <article>
-                <img src="../assets/img/nosotros-artesanal.jpg" alt="">
-                <p>Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años. Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años. Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años.</p>
+            <article class="nota-historia">
+                <div class="nota-historia-img">
+                    <img src="../assets/img/nosotros-artesanal.jpg" alt="">
+                </div>
+                <p>Utilizamos solo ingredientes naturales y seleccionados con rigor como premisa fundamental,así, lo convertimos en un
+                    producto exquisito y saludable. Nuestro compromiso con la sostenibilidad y el comercio justo garantiza
+                    que cada tableta de chocolate no solo deleite el paladar, sino que también contribuya al bienestar
+                    de las comunidades cacaoteras de la región.
+                </p>
             </article>
-            <article>
-                <p>Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años. Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años. Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor calidad y con recetas que han sido parte de nuestra historia durante años.</p>
-                <img src="../assets/img/nosotros-chocolate.jpg" alt="">
+            <article class="nota-historia3">
+                <div class="nota-historia-img3">
+                    <img src="../assets/img/nosotros-chocolate.jpg" alt="">
+                </div>
+                <p>Utilizamos solo ingredientes naturales y seleccionados con rigor como premisa fundamental,así, lo convertimos en un
+                    producto exquisito y saludable. Nuestro compromiso con la sostenibilidad y el comercio justo garantiza
+                    que cada tableta de chocolate no solo deleite el paladar, sino que también contribuya al bienestar
+                    de las comunidades cacaoteras de la región.
+                </p>
             </article>
-            <article>
+            <article class="relato-nosotros">
                 <h3>120</h3>
-                <p>Kau, 120 años de tradición familiar, dedicadas al más puro chocolate. Productos únicos hechos con
-                    amor para tocar el corazón de quien los prueba.</p>
+                <h4>Kau, 120 años de tradición familiar, dedicadas al más puro chocolate. Productos únicos hechos con
+                    amor para tocar el corazón de quien los prueba.</h4>
                 <p>Producimos de manera artesanal cada producto que llega a tus manos. Usamos productos de la mejor
                     calidad y con recetas que han sido parte de nuestra historia durante años.
                 </p>
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="grid-footer">
         <div class="social">
             <h3>Social</h3>
             <h4>NUESTRAS REDES</h4>
-            <div>
-                <img src="" alt="">
-                <h4>INSTAGRAM</h4>
-                <img src="" alt="">
-                <h4>FACEBOOK</h4>
-                <img src="" alt="">
-                <h4>LINKEDIN</h4>
+            <div class="redes">
+                <li><a href="">INSTAGRAM</a></li>
+                <li><a href="">FACEBOOK</a></li>
+                <li><a href="">LINKEDIN</a></li>
             </div>
         </div>
-        <section>
-        <div class="footer">
-            <H5>Tiendas</H5>
-            <p>Paseo Sobrmonte 24 - Córdoba</p>
-            <p>Ituzaingó 1032 - Santa fe</p>
-            <p>Cabildo 321 - Capital Federal</p>
-            <H5>KAU</H5>
-            <p>Productos</p>
-            <p>Historia</p>
-            <p>Nosotros</p>
-            <H5>Ayuda</H5>
-            <p>Contacto</p>
-            <p>Términos y condiciones</p>
-            <p>Políticas de privacidad</p>
-        </div>
+        <section class="footer">
+            <div class="footer-info">
+                <div>
+                    <H5>Tiendas</H5>
+                    <li><a href="">Paseo Sobrmonte 24 - Córdoba</a></li>
+                    <li><a href="">Ituzaingó 1032 - Santa fe</a></li>
+                    <li><a href="">Cabildo 321 - Capital Federal</a></li>
+                </div>
+                <div>
+                    <H5>KAU</H5>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./historia.html">Historia</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                </div>
+                <div>
+                    <H5>Ayuda</H5>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                </div>
+            </div>
+        </section>            
         <div class="back">
             <a href="../index.html">KAU</a>
-            </div>
-        </section>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
