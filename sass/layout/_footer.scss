@@ -1,0 +1,107 @@
+footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    section{
+        background: map-get($colores, nero);
+    }
+
+    
+}
+.social {
+    background: map-get($colores, tost);
+    width: 100%;
+    height: 25rem;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1.25rem;
+    h3{
+        width: 100%;
+        color: map-get($colores , blanc);
+        font-family: "Domine", serif;
+        font-size: map-get($fuente-tam, xl);
+        text-align: center;
+        }
+    h4 {
+        color: map-get($colores , claro);
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: map-get($fuente-tam, xs); 
+        text-align: center;    
+        }
+    div{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.75rem;
+        li{
+            text-align: center;
+        }
+        }
+    a {
+        text-decoration: none;
+        color: map-get($colores , claro);
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-size: map-get($fuente-tam, s);
+        text-align: center;
+        cursor: pointer;
+        margin: 3.75rem;
+    }
+}
+.footer-info {
+    width: 100%;
+    height: 18.75rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    div{
+        text-align: left;
+        h5 {
+            color: map-get($colores , blanc);
+            font-family: "Domine", serif;
+            font-size: map-get($fuente-tam, m);
+            padding: .625rem;
+        }
+        li{
+            display: flex;
+            a{
+                color: map-get($colores , blanc);
+                font-family: "Poppins", sans-serif;
+                font-size: map-get($fuente-tam, xs);
+                font-weight: 100;
+                margin: .625rem;
+                text-decoration: none;
+                cursor: pointer;
+                
+            }
+        }
+    }
+    
+}
+.back {
+    background: map-get($colores, nero);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.25rem;
+    a {
+        color: map-get($colores , claro);
+        font-family: "Poppins", sans-serif;
+        font-size: map-get($fuente-tam, xl);
+        font-weight: 600;
+        letter-spacing: .625rem;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            font-size: map-get($fuente-tam, xl);
+            letter-spacing: 1.25rem;
+        }
+    }
+}

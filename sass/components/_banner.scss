@@ -1,0 +1,52 @@
+.banner-portada {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-image: url(../assets/img/kau-inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    div {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: map-get($colores , blanc);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 6.25rem;
+        padding: 2.5rem;
+        h1 {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: map-get($fuente-tam, xxl);
+            letter-spacing: 2.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }  
+    }
+}
+
+.banner-historia{
+    @extend .banner-portada;
+    background-image: url(../assets/img/historia.jpg);
+}
+
+.banner-contacto{
+    @extend .banner-portada;
+    background-image: url(../assets/img/contacto.jpg);
+}
+
+.banner-nosotros{
+    @extend .banner-portada;
+    background-image: url(../assets/img/nosotros.jpg);
+}
+
+.banner-productos{
+    @extend .banner-portada;
+    background-image: url(../assets/img/productos.jpg);
+}

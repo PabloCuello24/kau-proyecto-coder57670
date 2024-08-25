@@ -1,0 +1,32 @@
+.menu{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    background-image: url(../assets/img/inicio-menu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                text-decoration: none;
+                color: map-get($colores , blanc);
+                font-family: "Domine", serif;
+                font-size: map-get($fuente-tam, l);
+                margin: .625rem;
+                cursor: pointer;
+                &:hover{
+                    color: map-get($colores , claro);
+                }
+            }
+        }
+    }
+}

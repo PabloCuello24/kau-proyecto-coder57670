@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    section {
+        background: map-get($colores, dark);
+
+        h3 {
+            margin-bottom: 1.875rem;
+            font-family: "Domine", serif;
+            color: map-get($colores , blanc);
+            font-size: map-get($fuente-tam, m);
+            padding: .625rem;
+        }
+
+        p {
+            margin-bottom: .625rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: map-get($fuente-tam, s);
+            color: map-get($colores , claro);
+            margin-bottom: 1.875rem;
+            padding: .625rem;
+        }
+    }
+}
+
+.relato-contenedor {
+    width: 100%;
+    height: 33.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    article {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-right: .625rem;
+        margin-left: .625rem;
+        justify-self: start;
+        align-items: center;
+    }
+
+    .number {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 20px;
+            font-family: "Poppins", sans-serif;
+            font-size: map-get($fuente-tam, xxxl);
+            font-weight: 25rem;
+            color: map-get($colores , claro);
+            padding: 2.5rem;
+            align-items: center;
+        }
+
+        .parrafo {
+            justify-content: center;
+            align-content: center;
+            text-align: left;
+            align-items: center;
+
+            h3 {
+                margin-bottom: 1.875rem;
+                font-family: "Domine", serif;
+                color: map-get($colores , blanc);
+                font-size: map-get($fuente-tam, m);
+                padding: .625rem;
+            }
+        }
+    }
+}
+
+.seccion-productos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+
+    h3 {
+        text-align: center;
+        padding: 1.25rem;
+    }
+}

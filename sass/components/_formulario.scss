@@ -1,0 +1,77 @@
+.contacto-form {
+    display: flex;
+    width: 80%;
+    height: 56.25rem;
+    margin: 1.25rem;
+    flex-direction: column;
+    background: map-get($colores, dark);
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: map-get($fuente-tam, xs);
+    font-weight: 300;
+    color: map-get($colores , blanc);
+    gap: 3.75rem;
+
+    div {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        gap: 1.875rem;
+
+    }
+
+    .data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .3125rem;
+
+        label {
+            color: map-get($colores, blanc);
+            margin-right: .625rem;
+        }
+
+        input {
+            border: .0625rem solid #8C7456;
+            outline: none;
+            width: 100%;
+            background: map-get($colores, dark);
+            font-family: "Poppins", sans-serif;
+            font-size: map-get($fuente-tam, s);
+            color: map-get($colores , claro);
+            font-weight: 200;
+            padding: .625rem;
+            border-radius: .625rem;
+        }
+
+        textarea {
+            border: .0625rem solid #8C7456;
+            height: 200px;
+            outline: none;
+            width: 100%;
+            background: map-get($colores, dark);
+            font-family: "Poppins", sans-serif;
+            font-size: map-get($fuente-tam, s);
+            color: map-get($colores , claro);
+            font-weight: 200;
+            padding: .625rem;
+            border-radius: .625rem;
+        }
+    }
+
+}
+
+.desplegable {
+    display: flex;
+    flex-direction: column;
+    border: .0625rem solid #8C7456;
+    outline: none;
+    width: 100%;
+    background: map-get($colores, dark);
+    font-family: "Poppins", sans-serif;
+    font-size: map-get($fuente-tam, s);
+    color: map-get($colores , claro);
+    font-weight: 200;
+    padding: .625rem;
+    border-radius: .625rem;
+}

@@ -1,0 +1,30 @@
+.productos {
+    background-color: #260801;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque-productos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+}
+
+
+
+.productos-end {
+    width: 100%;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

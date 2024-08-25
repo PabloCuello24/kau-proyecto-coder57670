@@ -1,0 +1,42 @@
+.header-navbar{
+    display: flex;
+    width: 100%;
+    padding: 1.25rem;
+    align-content: center;
+    align-items: center;
+    nav{
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 300;
+                    font-size: map-get($fuente-tam, xs);
+                    color: map-get($colores , blanc);
+                    &:hover{
+                        color: map-get($colores , claro);
+                        font-size: map-get($fuente-tam, s);
+                }
+            }
+        }
+    }
+}
+}
+
+.header-navbar .home a {
+    font-size: map-get($fuente-tam, xl);
+    font-weight: 600;
+    color: map-get($colores , blanc);
+    &:hover{
+        color: map-get($colores , claro);
+        letter-spacing: .625rem;
+        font-size: map-get($fuente-tam, xl);
+
+}
+    
+}

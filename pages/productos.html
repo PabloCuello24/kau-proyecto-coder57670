@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAU</title>
-    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="../css/styles.css">
+        <script src="https://kit.fontawesome.com/2b4e2ca3ab.js" crossorigin="anonymous"></script>
+    </head>
 
 <body>
     <header class="header">
-        <div class="header-index">
-            <form class="buscar" action="">
-                <input type="search" name="buscar" id="buscar" placeholder="buscar">
-            </form>
+        <div class="buscador">
+            <input type="text" placeholder="buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="header-navbar">
             <nav>
@@ -28,14 +28,17 @@
                 </ul>
             </nav>
         </div>
-        <div class="banner-portada banner-productos">
+    </header>
+    
+    
+    <main class="productos">
+        <div class="banner-productos">
             <div class="banner-contenido">
                 <h1>PRODUCTOS</h1>
             </div>
         </div>
-    </header>
-    <main class="productos">
         <section class="bloque-productos">
+            
             <div class="menu-lateral">
                 <h2>Categorías</h2>
                 <li><a href="">Alfajores</a></li>
@@ -50,7 +53,7 @@
                 <li><a href="">Otros</a></li>
                 <li><a href="">KAU</a></li>
             </div>
-            <section class="contenedor-cards">
+            <section class="contenedor-cards-productos">
                 <article class="card">
                     <div class="card-img">
                         <img src="../assets/img/macarrones.jpg" alt="">
@@ -58,7 +61,7 @@
                     <div class="card-info">
                         <h4>Macarrones</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -68,7 +71,7 @@
                     <div class="card-info">
                         <h4>Cakes</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -78,7 +81,7 @@
                     <div class="card-info">
                         <h4>Trufas</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -88,7 +91,7 @@
                     <div class="card-info">
                         <h4>Brownies</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -98,7 +101,7 @@
                     <div class="card-info">
                         <h4>Cupcakes</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -108,7 +111,7 @@
                     <div class="card-info">
                         <h4>Especiales</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -118,7 +121,7 @@
                     <div class="card-info">
                         <h4>Cookies</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -128,7 +131,7 @@
                     <div class="card-info">
                         <h4>Budines</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
                 <article class="card">
@@ -138,7 +141,7 @@
                     <div class="card-info">
                         <h4>Bombones</h4>
                         <p>Un clásico de la pastelería mundial hecho con amor</p>
-                        <button>VER MAS</button>
+                        <a class="button-1" href="">VER MÁS</a>
                     </div>
                 </article>
             </section>

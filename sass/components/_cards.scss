@@ -1,0 +1,59 @@
+.contenedor-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: start;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1.25rem;
+    article{
+        background: map-get($colores, dark);
+    }
+    }
+.card {
+    width: 18.75rem;
+    height: 35rem;
+    box-shadow: .3125rem .3125rem .625rem #8c7456;
+    margin: 2.5rem;
+    padding: 1.25rem;
+    display: flex;
+    .card-img{
+        width: 100%;
+        height: 60%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    div{
+        width: 100%;
+        text-align: center;
+        h4{
+            font-family: "Domine", serif;
+            font-size: map-get($fuente-tam, s);
+            color: map-get($colores , blanc);
+            text-align: center;
+            padding: .625rem;
+        }
+        p{
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-size: map-get($fuente-tam, xs);
+            padding: .375rem;
+            color: map-get($colores , blanc);
+            text-align: center;
+        }
+    }
+}
+
+
+.contenedor-cards-productos{
+    @extend .contenedor-cards;
+    width: 100%;
+    justify-content: space-around;
+    align-content: start;
+    flex-wrap: wrap;
+    height: auto;
+    gap: none;
+}

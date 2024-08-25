@@ -1,0 +1,56 @@
+/* preimero utilities*/
+@import "./utilities/maps";
+
+
+/*segundo base*/
+@import "./base/reset";
+
+
+
+/*tercero layout*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-historia";
+@import "./layout/main-nosotros";
+@import "./layout/main-productos";
+@import "./layout/main-contacto";
+
+
+
+/*cuarto componentes*/
+
+@import "./components/buscador";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./components/menu";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/menu-lateral";
+@import "./components/formulario";
+
+
+/* final*/
+
+
+@media(max-with: 52.4375rem){
+    .banner-portada{
+        height: 18.75rem;
+    }
+    .number{
+        h2{
+            display:none
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
