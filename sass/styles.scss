@@ -1,5 +1,7 @@
 /* preimero utilities*/
 @import "./utilities/maps";
+@import "./utilities/media";
+
 
 
 /*segundo base*/
@@ -32,17 +34,6 @@
 
 /* final*/
 
-
-@media(max-with: 52.4375rem){
-    .banner-portada{
-        height: 18.75rem;
-    }
-    .number{
-        h2{
-            display:none
-        }
-    }
-    }
 
 
 

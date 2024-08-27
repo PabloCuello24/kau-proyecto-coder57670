@@ -5,6 +5,7 @@ main {
 
     section {
         background: map-get($colores, dark);
+        justify-content: center;
 
         h3 {
             margin-bottom: 1.875rem;
@@ -12,6 +13,11 @@ main {
             color: map-get($colores , blanc);
             font-size: map-get($fuente-tam, m);
             padding: .625rem;
+
+            @include mobile {
+                font-size: map-get($fuente-tam, s);
+                text-align: center;
+            } 
         }
 
         p {
@@ -22,6 +28,11 @@ main {
             color: map-get($colores , claro);
             margin-bottom: 1.875rem;
             padding: .625rem;
+
+            @include mobile {
+                font-size: map-get($fuente-tam, xs);
+                text-align: center;
+            } 
         }
     }
 }
@@ -34,6 +45,11 @@ main {
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    } 
+
     article {
         display: flex;
         flex-direction: row;
@@ -42,6 +58,7 @@ main {
         margin-left: .625rem;
         justify-self: start;
         align-items: center;
+        padding: 1.5625rem;
     }
 
     .number {
@@ -49,6 +66,10 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include tablet {
+            display: none;
+        }
 
         h2 {
             margin-bottom: 20px;

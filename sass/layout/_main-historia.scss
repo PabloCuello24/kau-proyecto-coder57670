@@ -12,6 +12,10 @@
             color: map-get($colores , blanc);
             font-size: map-get($fuente-tam, m);
             padding: .625rem;
+
+            @include mobile {
+                font-size: map-get($fuente-tam, s);
+            }
         }
         p{
             margin-bottom: .625rem;
@@ -21,6 +25,10 @@
             color: map-get($colores , claro);
             margin-bottom: 1.875rem;
             padding: .625rem;
+
+            @include mobile {
+                font-size: map-get($fuente-tam, xs);
+            }
         }
     }
     }
@@ -30,7 +38,7 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-        
+
         .imagen-historia {
                 width: 100%;
                 height: 37.5rem;
@@ -45,6 +53,10 @@
                     text-align: left;
                     margin: .625rem;
                     padding: .625rem;
+
+                    @include tablet {
+                        text-align: center;
+                    }
                 }
                 img {
                     width: 100%;
@@ -66,6 +78,9 @@
             align-content: center;
             align-items: center;
             padding-top: 1.875rem;
+            @include tablet {
+                justify-content: center;
+            }
         }   
         }
     
@@ -87,6 +102,11 @@
             object-fit: cover;
             object-position: center;
             background-color: map-get($colores, dark);
+            
+            @include tablet {
+                justify-content: center;
+            }
+
             h2 {
                 font-family: "Poppins", sans-serif;
                 font-weight: 500;
@@ -95,6 +115,11 @@
                 text-align: center;
                 margin: .625rem;
                 padding: .625rem;
+
+                @include tablet {
+                    font-size: map-get($fuente-tam, l);
+                
+                }
             }
             p {
                 font-family: "Poppins", sans-serif;
@@ -104,6 +129,10 @@
                 text-align: center;
                 margin: .625rem;
                 padding: .625rem;
+
+                @include tablet {
+                    font-size: map-get($fuente-tam, xs);
+                }
             }
         }
     }
@@ -117,28 +146,37 @@
     align-content: center;
     align-items: center;
     background-color: map-get($colores, dark);
+
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.25rem;
+        justify-content: start;
+    }
     div{
         display: flex;
         width: 31.25rem;
         height: 21.875rem;
         object-fit: contain;
+        padding: 1.25rem;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        }
+    }
     p{
         width: 50%;
         display: flex;
         font-family: "Poppins", sans-serif;
         font-weight: 200;
-        font-size: map-get($fuente-tam, xs);
+        font-size: map-get($fuente-tam, s);
         color: map-get($colores , claro);
         text-align: left;
         margin: .625rem;
         padding: .625rem;
-    }
+        }
 }
 
     
@@ -146,5 +184,9 @@
     @extend .nota-historia;
     padding-top: none;
     padding-bottom: 5rem;
+
+    @include tablet {
+        flex-direction: column-reverse;
+    }
         
 }

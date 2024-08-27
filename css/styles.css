@@ -20,13 +20,18 @@ main {
   width: 100%;
   flex-direction: column; }
   main section {
-    background: #260801; }
+    background: #260801;
+    justify-content: center; }
     main section h3 {
       margin-bottom: 1.875rem;
       font-family: "Domine", serif;
       color: #ffffff;
       font-size: 1.5rem;
       padding: .625rem; }
+      @media (max-width: 48.125rem) {
+        main section h3 {
+          font-size: 1.25rem;
+          text-align: center; } }
     main section p {
       margin-bottom: .625rem;
       font-family: "Poppins", sans-serif;
@@ -35,6 +40,10 @@ main {
       color: #8c7456;
       margin-bottom: 1.875rem;
       padding: .625rem; }
+      @media (max-width: 48.125rem) {
+        main section p {
+          font-size: 1rem;
+          text-align: center; } }
 
 .relato-contenedor {
   width: 100%;
@@ -43,6 +52,10 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 48.125rem) {
+    .relato-contenedor {
+      flex-direction: column;
+      align-items: center; } }
   .relato-contenedor article {
     display: flex;
     flex-direction: row;
@@ -50,12 +63,16 @@ main {
     margin-right: .625rem;
     margin-left: .625rem;
     justify-self: start;
-    align-items: center; }
+    align-items: center;
+    padding: 1.5625rem; }
   .relato-contenedor .number {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 57.8125rem) {
+      .relato-contenedor .number {
+        display: none; } }
     .relato-contenedor .number h2 {
       margin-bottom: 20px;
       font-family: "Poppins", sans-serif;
@@ -121,8 +138,14 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 3.75rem; }
+    @media (max-width: 48.125rem) {
+      .social div {
+        flex-direction: column; } }
     .social div li {
       text-align: center; }
+      @media (max-width: 48.125rem) {
+        .social div li {
+          margin: .625rem; } }
   .social a {
     text-decoration: none;
     color: #8c7456;
@@ -140,15 +163,32 @@ footer {
   justify-content: space-around;
   align-items: center;
   justify-items: center; }
+  @media (max-width: 48.125rem) {
+    .footer-info {
+      flex-direction: column;
+      height: auto;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem; } }
   .footer-info div {
     text-align: left; }
+    @media (max-width: 48.125rem) {
+      .footer-info div {
+        text-align: center; } }
     .footer-info div h5 {
       color: #ffffff;
       font-family: "Domine", serif;
       font-size: 1.5rem;
       padding: .625rem; }
+      @media (max-width: 48.125rem) {
+        .footer-info div h5 {
+          font-size: 1.25rem; } }
     .footer-info div li {
       display: flex; }
+      @media (max-width: 48.125rem) {
+        .footer-info div li {
+          align-items: center;
+          text-align: center;
+          justify-content: center; } }
       .footer-info div li a {
         color: #ffffff;
         font-family: "Poppins", sans-serif;
@@ -157,6 +197,10 @@ footer {
         margin: .625rem;
         text-decoration: none;
         cursor: pointer; }
+        @media (max-width: 48.125rem) {
+          .footer-info div li a {
+            font-size: 0.75rem;
+            text-align: center; } }
 
 .back {
   background: #000000;
@@ -190,6 +234,9 @@ footer {
       color: #ffffff;
       font-size: 1.5rem;
       padding: .625rem; }
+      @media (max-width: 48.125rem) {
+        .historia section h3 {
+          font-size: 1.25rem; } }
     .historia section p {
       margin-bottom: .625rem;
       font-family: "Poppins", sans-serif;
@@ -198,6 +245,9 @@ footer {
       color: #8c7456;
       margin-bottom: 1.875rem;
       padding: .625rem; }
+      @media (max-width: 48.125rem) {
+        .historia section p {
+          font-size: 1rem; } }
 
 .info-historia {
   display: flex;
@@ -218,6 +268,9 @@ footer {
       text-align: left;
       margin: .625rem;
       padding: .625rem; }
+      @media (max-width: 57.8125rem) {
+        .info-historia .imagen-historia p, .info-historia div p {
+          text-align: center; } }
     .info-historia .imagen-historia img, .info-historia div img {
       width: 100%;
       height: 100%;
@@ -234,6 +287,9 @@ footer {
     align-content: center;
     align-items: center;
     padding-top: 1.875rem; }
+    @media (max-width: 57.8125rem) {
+      .info-historia div {
+        justify-content: center; } }
 
 .datos {
   display: flex;
@@ -252,6 +308,9 @@ footer {
     object-fit: cover;
     object-position: center;
     background-color: #260801; }
+    @media (max-width: 57.8125rem) {
+      .datos div {
+        justify-content: center; } }
     .datos div h2 {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
@@ -260,6 +319,9 @@ footer {
       text-align: center;
       margin: .625rem;
       padding: .625rem; }
+      @media (max-width: 57.8125rem) {
+        .datos div h2 {
+          font-size: 1.875rem; } }
     .datos div p {
       font-family: "Poppins", sans-serif;
       font-weight: 200;
@@ -268,6 +330,9 @@ footer {
       text-align: center;
       margin: .625rem;
       padding: .625rem; }
+      @media (max-width: 57.8125rem) {
+        .datos div p {
+          font-size: 1rem; } }
 
 .nota-historia, .nota-historia2, .nota-historia3 {
   text-align: left;
@@ -277,11 +342,18 @@ footer {
   align-content: center;
   align-items: center;
   background-color: #260801; }
+  @media (max-width: 57.8125rem) {
+    .nota-historia, .nota-historia2, .nota-historia3 {
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+      justify-content: start; } }
   .nota-historia div, .nota-historia2 div, .nota-historia3 div {
     display: flex;
     width: 31.25rem;
     height: 21.875rem;
-    object-fit: contain; }
+    object-fit: contain;
+    padding: 1.25rem; }
     .nota-historia div img, .nota-historia2 div img, .nota-historia3 div img {
       width: 100%;
       height: 100%;
@@ -291,7 +363,7 @@ footer {
     display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #8c7456;
     text-align: left;
     margin: .625rem;
@@ -300,6 +372,9 @@ footer {
 .nota-historia2 {
   padding-top: none;
   padding-bottom: 5rem; }
+  @media (max-width: 57.8125rem) {
+    .nota-historia2 {
+      flex-direction: column-reverse; } }
 
 .nosotros {
   display: flex;
@@ -353,16 +428,27 @@ footer {
     display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #8c7456;
     text-align: left;
     margin: .625rem;
     padding: .625rem; }
+    @media (max-width: 48.125rem) {
+      .nota-historia p, .nota-historia2 p, .nota-historia3 p {
+        font-size: 1rem;
+        text-align: center; } }
 
 .nota-historia3 {
   padding-top: none;
   padding-bottom: 5rem;
   flex-direction: row-reverse; }
+  @media (max-width: 57.8125rem) {
+    .nota-historia3 {
+      flex-direction: column; } }
+  @media (max-width: 48.125rem) {
+    .nota-historia3 {
+      font-size: 1.25rem;
+      text-align: center; } }
 
 .relato-nosotros {
   width: 100%;
@@ -382,6 +468,9 @@ footer {
       text-align: center;
       margin: .625rem;
       padding: .625rem; }
+      @media (max-width: 57.8125rem) {
+        .relato-nosotros div h3 {
+          display: none; } }
   .relato-nosotros h4 {
     font-family: "Domine", serif;
     font-weight: 200;
@@ -390,14 +479,25 @@ footer {
     text-align: left;
     margin: .625rem;
     padding: .625rem; }
+    @media (max-width: 57.8125rem) {
+      .relato-nosotros h4 {
+        text-align: center; } }
+    @media (max-width: 48.125rem) {
+      .relato-nosotros h4 {
+        font-size: 1.25rem;
+        text-align: center; } }
   .relato-nosotros p {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #8c7456;
     text-align: left;
     margin: .625rem;
     padding: .625rem; }
+    @media (max-width: 57.8125rem) {
+      .relato-nosotros p {
+        font-size: 1rem;
+        text-align: center; } }
 
 .productos {
   background-color: #260801;
@@ -447,6 +547,10 @@ footer {
     color: #8c7456;
     margin-bottom: 1.875rem;
     padding: .625rem; }
+    @media (max-width: 48.125rem) {
+      .contenido-contacto p {
+        text-align: center;
+        font-size: 1rem; } }
 
 .contactaciones {
   width: 100%;
@@ -456,7 +560,13 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #260801;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem; }
+  @media (max-width: 48.125rem) {
+    .contactaciones {
+      flex-direction: column;
+      align-items: center; } }
   .contactaciones div {
     display: flex;
     width: 25rem;
@@ -467,6 +577,13 @@ footer {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+      @media (max-width: 57.8125rem) {
+        .contactaciones div img {
+          width: 80%;
+          height: 70%; } }
+      @media (max-width: 48.125rem) {
+        .contactaciones div img {
+          display: none; } }
   .contactaciones h3 {
     margin-bottom: 1.875rem;
     font-family: "Domine", serif;
@@ -502,7 +619,9 @@ footer {
   .buscador i {
     font-size: 1.25rem;
     color: #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
 
 .button-1 {
   width: 12.5rem;
@@ -597,11 +716,18 @@ footer {
         cursor: pointer; }
         .menu ul li a:hover {
           color: #8c7456; }
+        @media (max-width: 57.8125rem) {
+          .menu ul li a {
+            font-size: 1.5rem; } }
+        @media (max-width: 48.125rem) {
+          .menu ul li a {
+            display: none; } }
 
 .header-navbar {
   display: flex;
   width: 100%;
-  padding: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   align-content: center;
   align-items: center; }
   .header-navbar nav {
@@ -642,6 +768,9 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 57.8125rem) {
+    .banner-portada, .banner-historia, .banner-contacto, .banner-nosotros, .banner-productos {
+      height: 26.25rem; } }
   .banner-portada div, .banner-historia div, .banner-contacto div, .banner-nosotros div, .banner-productos div {
     width: 100%;
     height: 100%;
@@ -660,6 +789,10 @@ footer {
       width: 100%;
       display: flex;
       justify-content: center; }
+      @media (max-width: 57.8125rem) {
+        .banner-portada div h1, .banner-historia div h1, .banner-contacto div h1, .banner-nosotros div h1, .banner-productos div h1 {
+          font-size: 3rem;
+          letter-spacing: 1.25rem; } }
 
 .banner-historia {
   background-image: url(../assets/img/historia.jpg); }
@@ -716,11 +849,17 @@ footer {
   font-weight: 300;
   color: #ffffff;
   gap: 3.75rem; }
+  @media (max-width: 57.8125rem) {
+    .contacto-form {
+      height: auto; } }
   .contacto-form div {
     width: 100%;
     flex-direction: row;
     display: flex;
     gap: 1.875rem; }
+    @media (max-width: 57.8125rem) {
+      .contacto-form div {
+        flex-direction: column; } }
   .contacto-form .data {
     width: 100%;
     display: flex;
@@ -740,6 +879,10 @@ footer {
       font-weight: 200;
       padding: .625rem;
       border-radius: .625rem; }
+      @media (max-width: 48.125rem) {
+        .contacto-form .data input {
+          text-align: center;
+          font-size: 1rem; } }
     .contacto-form .data textarea {
       border: .0625rem solid #8C7456;
       height: 200px;
@@ -766,10 +909,9 @@ footer {
   font-weight: 200;
   padding: .625rem;
   border-radius: .625rem; }
+  @media (max-width: 48.125rem) {
+    .desplegable {
+      text-align: center;
+      font-size: 1rem; } }
 
 /* final*/
-@media (max-with: 52.4375rem) {
-  .banner-portada, .banner-historia, .banner-contacto, .banner-nosotros, .banner-productos {
-    height: 18.75rem; }
-  .number h2 {
-    display: none; } }

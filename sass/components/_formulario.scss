@@ -12,11 +12,19 @@
     color: map-get($colores , blanc);
     gap: 3.75rem;
 
+    @include tablet {
+        height: auto;
+    }
+
     div {
         width: 100%;
         flex-direction: row;
         display: flex;
         gap: 1.875rem;
+
+        @include tablet {
+            flex-direction: column;
+        }
 
     }
 
@@ -42,6 +50,11 @@
             font-weight: 200;
             padding: .625rem;
             border-radius: .625rem;
+
+            @include mobile {
+                text-align: center;
+                font-size: map-get($fuente-tam, xs);
+            }
         }
 
         textarea {
@@ -74,4 +87,9 @@
     font-weight: 200;
     padding: .625rem;
     border-radius: .625rem;
+
+    @include mobile {
+        text-align: center;
+        font-size: map-get($fuente-tam, xs);
+    }
 }

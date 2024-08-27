@@ -67,11 +67,16 @@
         display: flex;
         font-family: "Poppins", sans-serif;
         font-weight: 200;
-        font-size: map-get($fuente-tam, xs);
+        font-size: map-get($fuente-tam, s);
         color: map-get($colores , claro);
         text-align: left;
         margin: .625rem;
         padding: .625rem;
+
+        @include mobile {
+            font-size: map-get($fuente-tam, xs);
+            text-align: center;
+        }
     }
 }
 
@@ -81,6 +86,15 @@
     padding-top: none;
     padding-bottom: 5rem;
     flex-direction: row-reverse;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        font-size: map-get($fuente-tam, s);
+        text-align: center;
+    }
 }
 
 .relato-nosotros {
@@ -103,6 +117,10 @@
             text-align: center;
             margin: .625rem;
             padding: .625rem;
+
+            @include tablet {
+                display: none;
+            }
         }
     }
 
@@ -114,15 +132,30 @@
         text-align: left;
         margin: .625rem;
         padding: .625rem;
+
+        @include tablet {
+            text-align: center;
+        }
+
+        @include mobile {
+            font-size: map-get($fuente-tam, s);
+            text-align: center;
+        }
     }
 
     p {
         font-family: "Poppins", sans-serif;
         font-weight: 200;
-        font-size: map-get($fuente-tam, xs);
+        font-size: map-get($fuente-tam, s);
         color: map-get($colores , claro);
         text-align: left;
         margin: .625rem;
         padding: .625rem;
+
+        @include tablet {
+            font-size: map-get($fuente-tam, xs);
+            text-align: center;
+        }
+
     }
 }

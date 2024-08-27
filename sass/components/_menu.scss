@@ -24,8 +24,16 @@
                 margin: .625rem;
                 cursor: pointer;
                 &:hover{
-                    color: map-get($colores , claro);
+                    color: map-get($colores , claro); 
                 }
+
+                @include tablet {
+                    font-size: map-get($fuente-tam, m);
+                }
+                
+                @include mobile {
+                    display: none;
+                } 
             }
         }
     }

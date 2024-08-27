@@ -38,8 +38,17 @@ footer{
         justify-content: center;
         align-items: center;
         margin-top: 3.75rem;
+
+        @include mobile {
+            flex-direction: column;
+        } 
         li{
             text-align: center;
+
+            @include mobile {
+                margin: .625rem;
+            } 
+
         }
         }
     a {
@@ -60,16 +69,38 @@ footer{
     justify-content: space-around;
     align-items: center;
     justify-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        height: auto;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    } 
+
     div{
         text-align: left;
+
+        @include mobile {
+            text-align: center;
+        } 
         h5 {
             color: map-get($colores , blanc);
             font-family: "Domine", serif;
             font-size: map-get($fuente-tam, m);
             padding: .625rem;
+
+            @include mobile {
+                font-size: map-get($fuente-tam, s);
+            } 
         }
         li{
             display: flex;
+            @include mobile {
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            } 
+            
             a{
                 color: map-get($colores , blanc);
                 font-family: "Poppins", sans-serif;
@@ -78,6 +109,11 @@ footer{
                 margin: .625rem;
                 text-decoration: none;
                 cursor: pointer;
+
+                @include mobile {
+                    font-size: map-get($fuente-tam, xxs);
+                        text-align: center;
+                } 
                 
             }
         }

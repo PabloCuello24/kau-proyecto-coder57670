@@ -19,5 +19,7 @@
         font-size: map-get($fuente-tam, s);
         color: map-get($colores , blanc);
         cursor:pointer;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 }
