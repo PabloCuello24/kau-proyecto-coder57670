@@ -10,10 +10,12 @@
 .header {
   display: flex;
   width: 100%;
-  height: 24vh;
+  height: 18vh;
   background: #000000;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  z-index: 999; }
 
 main {
   display: flex;
@@ -197,6 +199,10 @@ footer {
         margin: .625rem;
         text-decoration: none;
         cursor: pointer; }
+        .footer-info div li a:hover {
+          color: #8c7456;
+          transform: scale(1.1);
+          transition: transform 0.1s linear; }
         @media (max-width: 48.125rem) {
           .footer-info div li a {
             font-size: 0.75rem;
@@ -637,7 +643,9 @@ footer {
   .button-1:hover {
     background: #8c7456;
     color: #260801;
-    font-weight: 600; }
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: transform 0.5s linear; }
 
 .contenedor-cards, .contenedor-cards-productos {
   width: 100%;
@@ -657,6 +665,9 @@ footer {
   margin: 2.5rem;
   padding: 1.25rem;
   display: flex; }
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s linear; }
   .card .card-img {
     width: 100%;
     height: 60%; }
@@ -715,7 +726,9 @@ footer {
         margin: .625rem;
         cursor: pointer; }
         .menu ul li a:hover {
-          color: #8c7456; }
+          color: #8c7456;
+          transform: scale(1.3);
+          transition: transform 0.5s linear; }
         @media (max-width: 57.8125rem) {
           .menu ul li a {
             font-size: 1.5rem; } }
@@ -728,34 +741,52 @@ footer {
   width: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  justify-content: space-around;
   align-content: center;
   align-items: center; }
   .header-navbar nav {
     width: 100%; }
-    .header-navbar nav ul {
-      display: flex;
-      justify-content: space-between;
-      justify-items: center; }
-      .header-navbar nav ul li {
-        list-style: none; }
-        .header-navbar nav ul li a {
-          text-decoration: none;
-          font-family: "Poppins", sans-serif;
-          font-weight: 300;
-          font-size: 1rem;
-          color: #ffffff; }
-          .header-navbar nav ul li a:hover {
-            color: #8c7456;
-            font-size: 1.25rem; }
+    .header-navbar nav div {
+      justify-content: space-around; }
+      .header-navbar nav div div ul {
+        display: flex;
+        justify-items: center;
+        align-items: center; }
+        .header-navbar nav div div ul li {
+          list-style: none;
+          margin-left: auto;
+          margin-right: 3.75rem; }
+          .header-navbar nav div div ul li a {
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #ffffff; }
+            .header-navbar nav div div ul li a:hover {
+              color: #8c7456;
+              transform: scale(1.3);
+              transition: transform 0.5s linear; }
 
 .header-navbar .home a {
   font-size: 3rem;
   font-weight: 600;
   color: #ffffff; }
-  .header-navbar .home a:hover {
-    color: #8c7456;
-    letter-spacing: .625rem;
-    font-size: 3rem; }
+  @media (max-width: 62rem) {
+    .header-navbar .home a {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #ffffff; } }
+
+.navbar-brand {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  display: none; }
+  @media (max-width: 62rem) {
+    .navbar-brand {
+      display: inline; }
+      .navbar-brand:hover {
+        color: #8c7456; } }
 
 .banner-portada, .banner-historia, .banner-contacto, .banner-nosotros, .banner-productos {
   position: relative;
@@ -767,7 +798,8 @@ footer {
   background-image: url(../assets/img/kau-inicio.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 18vh; }
   @media (max-width: 57.8125rem) {
     .banner-portada, .banner-historia, .banner-contacto, .banner-nosotros, .banner-productos {
       height: 26.25rem; } }

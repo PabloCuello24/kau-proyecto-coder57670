@@ -13,5 +13,7 @@
         background: map-get($colores, claro);
         color: map-get($colores, dark);
         font-weight: 600;
+        transform: scale(1.1);
+        transition: transform 0.5s linear;
     }
 }

@@ -24,8 +24,10 @@
                 margin: .625rem;
                 cursor: pointer;
                 &:hover{
-                    color: map-get($colores , claro); 
-                }
+                    color: map-get($colores , claro);
+                    transform: scale(1.3);
+                    transition: transform 0.5s linear;
+            }
 
                 @include tablet {
                     font-size: map-get($fuente-tam, m);

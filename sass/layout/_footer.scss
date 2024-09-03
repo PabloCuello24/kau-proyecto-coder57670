@@ -109,6 +109,11 @@ footer{
                 margin: .625rem;
                 text-decoration: none;
                 cursor: pointer;
+                &:hover{
+                    color: map-get($colores , claro);
+                    transform: scale(1.1);
+                    transition: transform 0.1s linear;
+            }
 
                 @include mobile {
                     font-size: map-get($fuente-tam, xxs);

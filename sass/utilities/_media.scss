@@ -11,3 +11,10 @@
         
     }
 }
+
+@mixin navbar {
+    @media (max-width: 62rem) {
+        @content;
+        
+    }
+}
